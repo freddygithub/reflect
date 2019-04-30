@@ -12773,10 +12773,33 @@ input[type='file'] {
 .cbText{
    display: block; 
 }
+.mobileHide{
+    display: inline-block;
+}
+.mobileShow{
+    display: none;
+}
+.paymentBtn{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.paymentBtn i{
+    position: absolute;
+    margin-left: 10px;
+    top: 78.5%;
+}
+
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
-
+    
+    .mobileShow{
+        display: inline-block;
+    }
+    .mobileHide{
+        display: none;
+    }
     .cb-Mobile{
         display: block;
     }
@@ -12786,7 +12809,7 @@ input[type='file'] {
     .optionBtn{
         padding: 20px 10px;
         white-space: nowrap;
-        flex-basis: auto;
+        flex-basis: 0;
     }
     .signupbtn{
         width: auto!important;
