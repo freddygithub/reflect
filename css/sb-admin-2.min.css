@@ -12666,7 +12666,8 @@ input[type='file'] {
     margin-bottom: 10px;
 }
 .titleOne{
-   font-size: 20px; 
+   font-size: 20px;
+    padding-top: 10px;
 }
 .titleTwo{
     font-size: 25px; 
@@ -12677,9 +12678,10 @@ input[type='file'] {
     right: 13%;
 }
 .editOption p{
-    color: mediumblue;
+    color: #e74a3b;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 200;
 }
 .contextBodyProfile{
     margin-left: 10%;
@@ -12787,7 +12789,7 @@ input[type='file'] {
 .paymentBtn i{
     position: absolute;
     margin-left: 10px;
-    top: 76%;
+    top: 74%;
 }
 .paymentBtn-2{
     padding: 20px;
@@ -12799,6 +12801,10 @@ input[type='file'] {
     margin-left: 10px;
     top: 89%;
 }
+.container-lg{
+    padding: 10px 20px 120px !important;
+}
+
 
 
 /* Stays at bottom of file, MOBILE CSS*/
@@ -12843,7 +12849,7 @@ input[type='file'] {
     .paymentBtn i{
         position: absolute;
         margin-left: 10px;
-        top: 78.5%;
+        top: 74.5%;
     }
     .paymentBtn-2 i{
         position: absolute;
