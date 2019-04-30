@@ -28,7 +28,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
     <div class="container">
       <div class="logoy"></div>
-      <a class="signinText" href="">Sign In</a>
+      <a class="signinText" href="login.html">Sign In</a>
     </div>
 </nav>
       
@@ -50,31 +50,34 @@
                   </div>
                   <form class="user" method="post">
                       <div class="text-center">
-                        <div class="row  contextBody-2">
+                        <div class="row contextBody-2">
                                 <div class="col"></div>
-                                 <button class="col col-lg-2 btn btn-danger optionBtn">Reflect Monthly</button>
-                                 <button class="col col-lg-2 btn btn-danger optionBtn">Reflect Yearly</button>
+                                 <button type="button" id="ReflectMonthly" class="col col-lg-2 btn btn-danger optionBtn active">Reflect Monthly</button>
+                                 <button type="button" id="ReflectYearly" class="col col-lg-2 btn btn-danger optionBtn">Reflect Yearly</button>
                         </div>
                         <div class="row border-bottom border-dark contextBody-2">
-                          <p class="cb-2">Monthly Price after your first free month</p>
+                          <p class="cb-2 cbText">Monthly Price after your first free month</p>
+                            <p class="cb-Mobile">Price</p>
                                 <div class="col cb-2"></div>
                                  <div class="col col-lg-2 cb-2"></div>
-                                 <div class="col col-lg-2 cb-2">39.99</div>
-                                 <div class="col col-lg-2 cb-2">399.99</div>
+                                 <div id="ReflectMonthlyPrice" class="col col-lg-2 cb-2 activey">39.99</div>
+                                 <div id="ReflectYearlyPrice" class="col col-lg-2 cb-2 ">399.99</div>
                         </div>
                           <div class="row border-bottom border-dark contextBody-2">
-                              <p class="cb-2">HD available</p>
+                              <p class="cb-2 cbText">HD available</p>
+                                <p class="cb-Mobile">HD available</p>
                                 <div class="col cb-2"></div>
                                  <div class="col col-lg-2 cb-2"></div>
-                                 <div class="col col-lg-2 cb-2"><i class="fas fa-check"></i></div>
-                                 <div class="col col-lg-2 cb-2"><i class="fas fa-check"></i></div>
+                                 <div id="ReflectMonthlyFeature1" class="col col-lg-2 cb-2 activey"><i class="fas fa-check"></i></div>
+                                 <div id="ReflectYearlyFeature1" class="col col-lg-2 cb-2"><i class="fas fa-check"></i></div>
                         </div>
                           <div class="row border-bottom border-dark contextBody-2">
-                              <p class="cb-2">Screens you can watch on at the same time</p>
+                              <p class="cb-2 cbText">Screens you can watch on at the same time</p>
+                              <p class="cb-Mobile">Screens</p>
                                 <div class="col cb-2"></div>
                                  <div class="col col-lg-2 cb-2"></div>
-                                 <div class="col col-lg-2 cb-2">2</div>
-                                 <div class="col col-lg-2 cb-2">4</div>
+                                 <div id="ReflectMonthlyFeature2" class="col col-lg-2 cb-2 activey">2</div>
+                                 <div id="ReflectYearlyFeature2" class="col col-lg-2 cb-2">4</div>
                             <div></div>
                         </div>
                        </div>
@@ -85,9 +88,10 @@
                   </form>
                     
                     <br><br><br>
-                    <div class="row justify-content-center contextBody-2">
+                    <div class="row text-center justify-content-center contextBody-2">
                         If you have a Echelon account, sign in here to see discounted prices!
                     </div>
+                    <br>
                     <div class="row justify-content-center contextBody-2">
                         <a href="step3.html" class="btn btn-danger btn-user signInBtn">
                       Sign In
@@ -115,6 +119,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="js/agency.min.js"></script>
 
 </body>
 

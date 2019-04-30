@@ -12662,7 +12662,7 @@ input[type='file'] {
 .contextBox{
     width: 100%;
     height: 100px;
-    background-color: lightgray;
+    background-color: whitesmoke;
     margin-bottom: 10px;
 }
 .titleOne{
@@ -12674,7 +12674,7 @@ input[type='file'] {
 }
 .editOption{
     position: absolute;
-    right: 15%;
+    right: 13%;
 }
 .editOption p{
     color: mediumblue;
@@ -12690,6 +12690,11 @@ input[type='file'] {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+.contextBodyProfile strong{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
 .saveBtn{
     width: 300px !important;
     font-size: 15px !important;
@@ -12699,4 +12704,107 @@ input[type='file'] {
     color: #333;
     font-family: 'Helvetica Neue';
     font-weight: 150; 
+}
+.fgModal{
+    height: 50px;
+}
+.fgModal input{
+    height: 50px;
+    font-size: 15px !important;
+}
+.activey{
+    color: red;
+}
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+    
+   font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+    
+   font-family: "Font Awesome 5 Free";
+   content: "\f00d";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+}
+
+.cb-Mobile{
+    margin-top: 15px;
+    display: none;
+}
+.cbText{
+   display: block; 
+}
+
+/* Stays at bottom of file, MOBILE CSS*/
+@media (max-width:768px) {
+
+    .cb-Mobile{
+        display: block;
+    }
+    .cbText{
+       display: none; 
+    }
+    .optionBtn{
+        padding: 20px 10px;
+        white-space: nowrap;
+        flex-basis: auto;
+    }
+    .signupbtn{
+        width: auto!important;
+    }
+    .editOption{
+        position: relative;
+        right: auto;
+    }
+    .contextBox{
+        height: 150px;
+    }
+    .contextBodyProfile{
+        font-size: 17px;
+    }
+    .contextBodyProfile strong{
+        font-size: 17px;
+    }
+    .container-sm{
+         width: 100%;
+    }
 }

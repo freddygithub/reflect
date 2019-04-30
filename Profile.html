@@ -17,7 +17,12 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -28,7 +33,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
     <div class="container">
         <div class="logoy"></div>
-      <a class="signinText" href="">Sign Out</a>
+      <a class="signinText" href="login.html">Sign Out</a>
     </div>
 </nav>
       
@@ -49,16 +54,24 @@
                           Membership & Billing
                         </div>
                         <div class="contextBodyProfile">
-                          Email: User_email@example.com
-                            <a class="editOption"><p>Change Email</p></a>
+                          Email: <strong>User_email@example.com</strong>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal5"><p>Change Email</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
                           Password: *********
-                            <a class="editOption"><p>Change Password</p></a>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal4"><p>Change Password</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
                           Phone Number: 
-                            <a class="editOption"><p>Change Phone Number</p></a>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal3"><p>Change Phone Number</p></a>
+                        </div>
+                        <div class="contextBodyProfile border-top border-dark">
+                          Payment Info: <strong>**** ***** 4125</strong>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal6"><p>Change Payment</p></a>
+                        </div>
+                        <div class="contextBodyProfile border-dark">
+                          Billing Details
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal7"><p>Change Billing Details</p></a>
                         </div>
                       <br>
                         <div class="contextBodyTitle text-left border-top border-dark">
@@ -66,16 +79,13 @@
                         </div>
                         <div class="contextBodyProfile">
                           Language
-                            <a class="editOption"><p>Change Language</p></a>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal2"><p>Change Language</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
                           Manage profile names
-                            <a class="editOption"><p>Change Profile Names</p></a>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal"><p>Change Profile Names</p></a>
                         </div>
                       <br>
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block saveBtn">
-                      Save Profile
-                    </a>
                   </form>
                 </div>
               </div>
@@ -88,16 +98,217 @@
     </div>
 
   </div>
+   
 
+<!-- line modal for profile names -->
+<div class="modal fade" id="squarespaceModal" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Chaning Profile Names <i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <!-- content goes here -->
+                <form class="user" method="post">
+                      <div class="text-center">
+                        <div class="form-group fgModal">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Family Member's Name...">
+                        </div>
+                        <div class="form-group fgModal">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Family Member's Name...">
+                        </div>
+                        <div class="form-group fgModal">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Family Member's Name...">
+                        </div>
+                        <div class="form-group fgModal">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Family Member's Name...">
+                        </div>
+                    </div>
+                  </form>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- line modal for language -->
+<div class="modal fade" id="squarespaceModal2" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Chaning Language <i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <select class="selectpicker" data-width="fit">
+                <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+              <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+            </select>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+    
+<!-- line modal for phone number -->
+<div class="modal fade" id="squarespaceModal3" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Changing Phone Number<i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group fgModal">
+              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Phone Number...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+       
+<!-- line modal for password -->
+<div class="modal fade" id="squarespaceModal4" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Changing Password<i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group fgModal">
+              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- line modal for email -->
+<div class="modal fade" id="squarespaceModal5" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Changing Email<i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group fgModal">
+              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Email...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- line modal for Payment -->
+<div class="modal fade" id="squarespaceModal6" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Changing Payment<i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group fgModal">
+              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Email...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- line modal for Billing details -->
+<div class="modal fade" id="squarespaceModal7" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Changing Billing Details<i class="fas fa-exclamation-triangle"></i></h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group fgModal">
+              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Email...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+ 
+    
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="js/agency.min.js"></script>
 
 </body>
 
