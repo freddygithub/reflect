@@ -12787,7 +12787,17 @@ input[type='file'] {
 .paymentBtn i{
     position: absolute;
     margin-left: 10px;
-    top: 78.5%;
+    top: 76%;
+}
+.paymentBtn-2{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.paymentBtn-2 i{
+    position: absolute;
+    margin-left: 10px;
+    top: 89%;
 }
 
 
@@ -12829,5 +12839,15 @@ input[type='file'] {
     }
     .container-sm{
          width: 100%;
+    }
+    .paymentBtn i{
+        position: absolute;
+        margin-left: 10px;
+        top: 78.5%;
+    }
+    .paymentBtn-2 i{
+        position: absolute;
+        margin-left: 10px;
+        top: 90%;
     }
 }
