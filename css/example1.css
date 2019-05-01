@@ -1,5 +1,5 @@
 .example.example1 {
-  background-color: #6772e5;
+  background-color: white;
 }
 
 .example.example1 * {
@@ -12,7 +12,7 @@
   margin: 0 15px 20px;
   padding: 0;
   border-style: none;
-  background-color: #7795f8;
+  background-color: #e74a3b;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 #829fff;
   border-radius: 4px;
@@ -27,14 +27,14 @@
 }
 
 .example.example1 .row + .row {
-  border-top: 1px solid #819efc;
+  border-top: 1px solid darkgrey;
 }
 
 .example.example1 label {
   width: 15%;
   min-width: 70px;
   padding: 11px 0;
-  color: #c4f0ff;
+  color: lightgrey;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -72,7 +72,7 @@
 }
 
 .example.example1 input::-webkit-input-placeholder {
-  color: #87bbfd;
+  color: white;
 }
 
 .example.example1 input::-moz-placeholder {
@@ -88,7 +88,7 @@
   width: calc(100% - 30px);
   height: 40px;
   margin: 40px 15px 0;
-  background-color: #f6a4eb;
+  background-color: green;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 #ffb9f6;
   border-radius: 4px;
@@ -98,7 +98,7 @@
 }
 
 .example.example1 button:active {
-  background-color: #d782d9;
+  background-color: darkgreen;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 #e298d8;
 }

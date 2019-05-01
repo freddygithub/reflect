@@ -27,7 +27,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
     <div class="container">
-        <div class="logoy"></div>
+      <div class="logoy"></div>
       <a class="signinText" href="login.html">Sign In</a>
     </div>
 </nav>
@@ -44,25 +44,20 @@
                   <div class="text-center">
                       <div class="cir"><i class="fas fa-check fa-2x bigCheck"></i></div>
                       <br>
-                      <div class="stepsText">Step <b>1</b> of <b>3</b></div>
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Choose Your Plan.</h1>
+                      <div class="stepsText">Step <b>2</b> of <b>3</b></div>
+                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Create your account.</h1>
                   </div>
-                  <form class="user" method="post">
-                      <div class="text-left">
+                  <form class="user" method="get" action="Account.html">
+                      <input id="plan" name="plan" hidden>
+                      <div class="text-center">
                         <div class="contextBody">
-                            <i class="fas fa-check spacey"></i>
-                          You won't be charged until after your 14 day trial ends.
-                        </div>
-                          <br>
-                        <div class="contextBody">
-                            <i class="fas fa-check spacey"></i>
-                          No commitments, cancel anytime.
+                         Use your email and create a password to start working with Reflect today.
                         </div>
                     </div>
                       <br>
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
-                      See the Plans
-                    </a>
+                    <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user btn-block signupText">
+                      Continue
+                    </button>
                   </form>
                 </div>
               </div>
@@ -85,6 +80,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="js/agency.min.js"></script>
 
 </body>
 

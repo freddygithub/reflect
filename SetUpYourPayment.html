@@ -18,6 +18,13 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
     
+<script src="https://js.stripe.com/v3/"></script>
+    
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -42,34 +49,43 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                      <div class="cir"><i class="fas fa-check fa-2x bigCheck"></i></div>
+                      <div class="cir"><i class="fas fa-lock fa-2x bigCheck"></i></div>
                       <br>
-                      <div class="stepsText">Step <b>2</b> of <b>3</b></div>
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Create your account.</h1>
+                      <div class="stepsText">Step <b>3</b> of <b>3</b></div>
+                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Set Up Your Payment.</h1>
                   </div>
-                  <form class="user" method="post">
-                      <div class="text-center">
+                    <div class="text-left">
                         <div class="contextBody">
-                         Use your email and create a password to start working with Reflect today.
+                            <i class="fas fa-check spacey"></i>
+                          You won't be charged until after your 14 day trial ends.
+                        </div>
+                          <br>
+                        <div class="contextBody">
+                            <i class="fas fa-check spacey"></i>
+                          No commitments, cancel anytime.
                         </div>
                     </div>
-                      <br>
-                    <a href="step4.html" class="btn btn-danger btn-user btn-block signupText">
-                      Continue
-                    </a>
-                  </form>
                 </div>
+                  
+                <form class="user" method="get" action="card.html">
+                    <input id="plan" name="plan" hidden>
+                    <div class="row justify-content-center">
+                        <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user paymentBtn" href="card.html"> Credit or Debit Card <i class="fas fa-2x fa-credit-card"></i></button>
+                    </div>
+                  </form>
+                  
+                  <div class="row justify-content-center">
+                      <a class="btn btn-danger btn-user paymentBtn-2" href="ActivationCode.html"> Activation Code <i class="fas fa-2x fa-key"></i></a>
+                  </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
+    
   </div>
-
+    
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -78,8 +94,9 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
+  <script src="js/agency.min.js"></script>
+  <script src="js/example5.js"></script>
+    
 </body>
 
 </html>

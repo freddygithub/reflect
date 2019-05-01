@@ -45,12 +45,13 @@
                       <div class="cir"><i class="fas fa-check fa-2x bigCheck"></i></div>
                       <br>
                       <div class="stepsText">Step <b>2</b> of <b>3</b></div>
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Choose a plan that's right for you.</h1>
+                    <h1 class="h4 mb-4 signinHeader">Choose a plan that's right for you.</h1>
                       <p>Downgrade or upgrade at any time</p>
                   </div>
-                  <form class="user" method="post">
+                  <form class="user" method="get" action="CreateYourAccount.html">
                       <div class="text-center">
                         <div class="row contextBody-2">
+                            <input id="plan" name="plan" hidden value="1">
                                 <div class="col mobileHide"></div>
                                  <button type="button" id="ReflectMonthly" class="col col-lg-2 btn btn-danger optionBtn active ">Reflect Monthly</button>
                                  <button type="button" id="ReflectYearly" class="col col-lg-2 btn btn-danger optionBtn">Reflect Yearly</button>
@@ -82,9 +83,9 @@
                         </div>
                        </div>
                       <br><br>
-                    <a href="step3.html" class="btn btn-danger btn-user btn-block signupText signupbtn">
+                    <button type="submit" class="btn btn-danger btn-user btn-block signupText signupbtn">
                       Continue
-                    </a>
+                    </button>
                   </form>
                     
                     <br><br><br>
