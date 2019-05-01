@@ -14,7 +14,7 @@
   border-style: none;
   background-color: #e74a3b;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 #829fff;
+    inset 0 1px 0 whitesmoke;
   border-radius: 4px;
 }
 
@@ -76,11 +76,11 @@
 }
 
 .example.example1 input::-moz-placeholder {
-  color: #87bbfd;
+  color: white;
 }
 
 .example.example1 input:-ms-input-placeholder {
-  color: #87bbfd;
+  color: white;
 }
 
 .example.example1 button {
@@ -108,7 +108,7 @@
 }
 
 .example.example1 .error svg .glyph {
-  fill: #6772e5;
+  fill: #e74a3b;
 }
 
 .example.example1 .error .message {
@@ -116,7 +116,7 @@
 }
 
 .example.example1 .success .icon .border {
-  stroke: #87bbfd;
+  stroke: #e74a3b;
 }
 
 .example.example1 .success .icon .checkmark {
@@ -128,7 +128,7 @@
 }
 
 .example.example1 .success .message {
-  color: #9cdbff;
+  color: #e74a3b;
 }
 
 .example.example1 .success .reset path {

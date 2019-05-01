@@ -1660,6 +1660,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 }
 .signinText{
      font-size: 40px !important;
+    float: right;
 }
 .signupText{
     font-size: 20px !important;

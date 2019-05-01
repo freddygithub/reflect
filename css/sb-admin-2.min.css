@@ -12585,6 +12585,7 @@ input[type='file'] {
 }
 .signinText{
      font-size: 20px !important;
+     float: right;
 }
 .signupText{
     font-size: 20px !important;
@@ -12622,6 +12623,9 @@ input[type='file'] {
 .spacey{
     margin-right: 10px;
     color: #e74a3b;
+}
+.spacey-lg{
+    padding-right: 500px; 
 }
 .bigCheck{
     color: #e74a3b;
@@ -12804,8 +12808,15 @@ input[type='file'] {
 .container-lg{
     padding: 10px 20px 120px !important;
 }
-
-
+.address{
+    width: 150px !important;
+}
+.customBorder{
+    border-top: 1px solid darkgrey;
+}
+.selectBox{
+    width: 100px;
+}
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
@@ -12855,5 +12866,11 @@ input[type='file'] {
         position: absolute;
         margin-left: 10px;
         top: 90%;
+    }
+    .spacey-lg{
+        padding-right: 0px; 
+    }
+    .logoy{
+       width: 160px;
     }
 }

@@ -17,7 +17,7 @@
     iconStyle: 'solid',
     style: {
       base: {
-        iconColor: '#c4f0ff',
+        iconColor: 'white',
         color: '#fff',
         fontWeight: 500,
         fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
