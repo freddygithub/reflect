@@ -12815,7 +12815,7 @@ input[type='file'] {
     border-top: 1px solid darkgrey;
 }
 .selectBox{
-    width: 100px;
+    width: 150px;
 }
 
 /* Stays at bottom of file, MOBILE CSS*/
