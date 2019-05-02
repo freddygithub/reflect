@@ -12586,6 +12586,7 @@ input[type='file'] {
 .signinText{
      font-size: 20px !important;
      float: right;
+     margin-right: 15px;
 }
 .signupText{
     font-size: 20px !important;
@@ -12663,6 +12664,44 @@ input[type='file'] {
    height: 50px;
    margin-top: 10px;
 }
+.logoy-2{
+   background-image: url('../img/reflect-logo.png');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 150px;
+   height: 50px;
+   margin-top: 10px !important;
+   margin: auto;
+}
+.echelonLogo{
+    background-image: url('../img/logo.png');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 200px;
+   height: 50px;
+   margin-top: 10px;
+   margin-bottom: 20px !important;
+}
+.echelonLogo-2{
+   background-image: url('../img/logo.png');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 30px;
+   height: 30px;
+   margin: auto;
+}
+.echelonLogo-3{
+   background-image: url('../img/logo.png');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 50px;
+   height: 50px;
+   margin-right: 0px !important;
+}
 .contextBox{
     width: 100%;
     height: 100px;
@@ -12729,7 +12768,14 @@ input[type='file'] {
 .activey{
     color: red;
 }
-
+.infoGender{
+    width: 300px !important;
+    height: 50px;
+}
+.weight{
+    width: 200px;
+    height: 50px;
+}
 
 /* The message box is shown when the user clicks on the password field */
 #message {
@@ -12840,7 +12886,10 @@ input[type='file'] {
     top: 46%;
     left: 64.5%;
 }
-
+.cardEdit{
+    width: 250px; 
+    margin: 0;
+}
 
 
 /* Stays at bottom of file, MOBILE CSS*/
@@ -12909,5 +12958,23 @@ input[type='file'] {
     }
     .logoy{
        width: 160px;
+    }
+    .infoGender{
+        width: 200px !important;
+    }
+    .weight{
+        width: 100px;
+        height: 50px;
+    }
+    .echelonLogo-2{
+       width: 30px;
+       height: 30px;
+    }
+    .cardEdit{
+        width: 100%; 
+        margin: 0;
+    }
+    .signinText{
+         margin-right: 0px;
     }
 }
