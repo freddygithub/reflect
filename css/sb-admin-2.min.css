@@ -12677,6 +12677,14 @@ input[type='file'] {
     font-size: 25px; 
     color: black;
 }
+.titleOne-2{
+   font-size: 20px;
+    padding-top: 10px;
+}
+.titleTwo-2{
+    font-size: 25px; 
+    color: black;
+}
 .editOption{
     position: absolute;
     right: 13%;
@@ -12817,10 +12825,39 @@ input[type='file'] {
 .selectBox{
     width: 150px;
 }
+.inputBoxExtend{
+    width: 300px;
+}
+.discounted{
+    font-size: 15px !important;
+    position: absolute;
+    top: 46%;
+    left: 79.8%;
+}
+.discounted-2{
+    font-size: 16px !important;
+    position: absolute;
+    top: 46%;
+    left: 64.5%;
+}
+
+
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
     
+    .discounted{
+        font-size: 15px !important;
+        position: absolute;
+        top: 47%;
+        left: 25%;
+    }
+    .discounted-2{
+        font-size: 15px !important;
+        position: absolute;
+        top: 47%;
+        left: 2%;
+    }
     .mobileShow{
         display: inline-block;
     }
